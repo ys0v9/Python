@@ -17,7 +17,7 @@ print()
 #45-2
 print('< 45-2 >')
 c=int(input("행 수: "))
-for i in range(i,0,-1):
+for i in range(c,0,-1):
     for j in range(i):
         print("*", end=" ")
     print()
