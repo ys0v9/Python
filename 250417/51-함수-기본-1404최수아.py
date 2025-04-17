@@ -9,7 +9,7 @@ print(fun_s(10))
 print(fun_s(100))
 print(fun_s(1000))
 
-
+ 
 
 #51-2
 def fun_fact(n):
