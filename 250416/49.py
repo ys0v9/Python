@@ -22,3 +22,4 @@ t.pendown()
 for j in range(3):
     t.fd(100)
     t.lt(120)
+exitonclick()
