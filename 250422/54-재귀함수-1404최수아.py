@@ -23,4 +23,4 @@ def fun_f(m):
 print(fun_f(1))
 print(fun_f(10))
 b = int(input('자연수: '))
-print(fun_f(b)) 
+print(fun_f(b))
