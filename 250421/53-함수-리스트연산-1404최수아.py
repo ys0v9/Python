@@ -6,7 +6,7 @@ def lst_append(lst):
     while True:
         p = input('추가 숫자: ')
         try:
-            a_p = int(p)
+            a_p = float(p)
             lst.append(a_p)
         except ValueError:
             break
