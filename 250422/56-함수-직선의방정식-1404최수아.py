@@ -13,6 +13,8 @@ def get_line(a1, b1, a2, b2):
     else:
         slp = (b2-b1)/(a2-a1)
         y_i = b1 - slp*a1
+        if y_i == 0:
+            y_i = '(0.0)'
         rst = f'y = {slp}x + {y_i}'
     return rst
 
