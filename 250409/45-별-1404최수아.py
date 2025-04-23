@@ -1,8 +1,10 @@
 #45-0
 print('< 45-0>')
-a=int(input("행 수: "))
-for i in range(1, a+1):
-    print('*'*a)
+a = int(input("행 수: "))
+for i in range(a):  
+    for j in range(a): 
+        print('*', end='')
+    print()  
 print()
 
 #45-1
