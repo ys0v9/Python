@@ -25,7 +25,7 @@ goto(0, y_max)
 
 
 for func in func_list:
-    color(r.choice(["green", "red", "blue", "purple"]))
+    color(r.choice(["green", "red", "blue","hot pink", "purple", "pink", "gray", "orange", "brown", "sky blue", "salmon"]))
     x = x_min
     y = eval(func)
     up()
@@ -35,7 +35,7 @@ for func in func_list:
     while x <= x_max:
         x += space
         y = eval(func)
-        goto(x, y)
+        goto(x, y) 
 
 done()
 
