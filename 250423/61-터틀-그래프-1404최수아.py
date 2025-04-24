@@ -12,6 +12,7 @@ setworldcoordinates(x_min, y_min, x_max, y_max)
 speed(0)
 pensize(3)
 
+
 up()
 goto(x_min, 0)
 down()
@@ -22,24 +23,19 @@ goto(0, y_min)
 down()
 goto(0, y_max)
 
+
 for func in func_list:
     color(r.choice(["green", "red", "blue", "purple"]))
     x = x_min
+    y = eval(func)
     up()
-    try:
-        y = eval(func)
-        goto(x, y)
-        down()
-    except:
-        continue
+    goto(x, y)
+    down()
 
     while x <= x_max:
-        try:
-            y = eval(func)
-            goto(x, y)
-        except:
-            pass
         x += space
+        y = eval(func)
+        goto(x, y)
 
 done()
 
