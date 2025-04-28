@@ -55,7 +55,6 @@ def keyboard():
 def mouse():
     speed(0)
     pensize(2)
-    onr
     onscreenclick(goto)
     onkeypress(blank, "Escape")
     listen()
@@ -66,4 +65,3 @@ if select == "1":
     keyboard()
 elif select == "2":
     mouse()
-

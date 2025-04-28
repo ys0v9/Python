@@ -38,4 +38,3 @@ for func in func_list:
         goto(x, y) 
 
 done()
-
