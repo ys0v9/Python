@@ -1,10 +1,9 @@
 class Counter:
-    def __init__(self, count): 
-        self.count = 0    
-        self.initValue = count  
+    def __init__(self): #생성자, 초기화
+        self.count = 0 #인스턴스 변수
 
-    def reset(self):
-        self.count = self.initValue  
+    def reset(self, initValue=0):
+        self.count = initValue
 
     def increment(self):
         self.count += 1
@@ -12,13 +11,13 @@ class Counter:
     def get(self):
         return self.count 
 
-a = Counter(0)
-b = Counter(100)
+a = Counter()
+b = Counter()
 
 a.reset()
 a.increment()
 print(a.get())
 
-b.reset()
+b.reset(100)
 b.increment()
 print(b.get()) 
