@@ -4,6 +4,7 @@ name = input("이름: ")
 age = input("나이: ")
 school = input("학교: ")
 
-f = open("me.txt", "w")
-
-f.write(f'이름: {name}, 나이: {age}, 학교: {school}')
+with open("me.txt", "w") as f:
+    f.write(f'이름: {name}\n')
+    f.write(f'나이: {age}\n')
+    f.write(f'학교: {school}\n')
