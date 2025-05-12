@@ -1,8 +1,10 @@
 from turtle import *
-import random as r
+import random as r # 먹이 랜덤 위치 이동
 
+# 스크린도 객체
 
 # 등장인물 만들기
+# 하나만 만들 때는 객체 따로 안만들어도 t. 쓰면 가능
 tc = Turtle() # 주인공 거북(흰색)
 tc.shape("turtle")
 tc.color("white")
@@ -27,9 +29,9 @@ tf.up()
 tf.goto(0, -200) # 먹이 시작 위치
 
 
-# 움직임 정의
+# 주인공 움직임 정의 (키보드 방향키)
 def turn_right():
-    tc.setheading(0)
+    tc.setheading(0) # seth 까지 써도 가능 # 절대 각도 0: 오른쪽
     
 def turn_left():
     tc.setheading(180)
@@ -44,7 +46,7 @@ def turn_down():
 # play 함수
 def play():
     tc.fd(10) # 주인공 앞으로 이동
-    ang = tv.towards(tc.pos()) # 주인공 위치의 각도
+    ang = tv.towards(tc.pos()) # 악당입장, 주인공 위치의 상대 각도 
     tv.setheading(ang) # 악당이 주인공 쪽을 바라보게
     tv.fd(9) # 악당 앞으로 이동
 
