@@ -7,5 +7,5 @@ img.show() # 기본 이미지 뷰어로 열기
 
 # 이미지 정보 확인
 print("이미지 크기:", img.size) # 크기는 튜플형(가로, 세로)
-print("이미지 형식:", img.format) # 등
-print("이미지 모드:", img.mode) # 등
+print("이미지 형식:", img.format) # JPEG, PNG 등
+print("이미지 모드:", img.mode) # RGB, L(흑백) 등
